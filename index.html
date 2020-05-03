@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    
+    
+
+    <link rel="stylesheet" href="weather.css" />
+    <script src="weather.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 id="title-bar">Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5>Find the latest weather for:</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="City" aria-label="City"
+                                aria-describedby="basic-addon2" id="city-input">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary is-primary" style="background-color:salmon " type="button" font="primary" id="submit-btn">Go!</button>
+                                <button class="btn btn-outline-secondary" style="background-color: salmon" type="button" id="clear-btn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="list-group" id="city-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row" id="conditions">
+                    <div class="col-sm-4">
+                        <h3 id="db-location"></h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 id="db-current"></h3>
+                        <img id="db-icon" />
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 id="time-stamp" hidden></h3>
+                        <h5 id="spacer"> </h5>
+                        <h5 id="db-temp"></h5>
+                        <h5 id="db-humidity"></h5>
+                        <h5 id="db-wind"></h5>
+                        <h5 id="db-uv-header" hidden>UV Index: <span class="badge" id="db-uv"></span></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 id="five-day-header" hidden>5 Day Forecast</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-group" hidden>
+                            <div class="card" id="5day-1">
+                            </div>
+                            <div class="card" id="5day-2">
+                            </div>
+                            <div class="card" id="5day-3">
+                            </div>
+                            <div class="card" id="5day-4">
+                            </div>
+                            <div class="card" id="5day-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>

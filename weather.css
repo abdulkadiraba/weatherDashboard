@@ -1,0 +1,48 @@
+body {
+    background-color:lightblue;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.card-header, .card-footer {
+    background-color: midnightblue
+    text-align: center;
+}
+
+.uv012 {
+    background: limegreen;
+}
+
+.uv34 {
+    background:lime;
+}
+
+.uv56 {
+    background: orange;
+}
+
+.uv789 {
+    background: red;
+}
+
+.uv10plus {
+    background: purple;
+    color: white;
+}
+
+#city-list {
+    margin: 5px auto;
+}
+
+#title-bar {
+    background: lightslategray;
+    border: 1px solid darkgray;
+    margin: 5px auto;
+    text-align: center
+}
